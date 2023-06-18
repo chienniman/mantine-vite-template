@@ -19,9 +19,6 @@ jobs:
 
       - name: CI
         run: npm ci
-
-      - name: Install
-        run: npm install
   
   test:
     name: Test
@@ -29,6 +26,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
       - name: Typecheck
         run: npm run typecheck
 
@@ -47,6 +47,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
       - name: Run build
         run: npm run build
 
