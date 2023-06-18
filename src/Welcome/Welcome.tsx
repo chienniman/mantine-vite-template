@@ -6,7 +6,7 @@ export function Welcome() {
       <Text size="xl" weight={500}>
         Welcome to Mantine!
       </Text>
-      <Button>My first Github Action</Button>
+      <Button>Github Action</Button>
     </Stack>
   );
 }
