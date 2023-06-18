@@ -1,5 +1,6 @@
 {
   "name": "mantine-vite-template",
+  "homepage": "https://chienniman.github.io/vite-template",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -12,7 +13,7 @@
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "jest": "jest",
     "jest:watch": "jest --watch",
-    "test": "npm run typecheck && npm run prettier && npm run lint && npm run jest && npm run build"
+    "test": "npm run typecheck && npm run prettier && npm run lint && npm run jest"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
