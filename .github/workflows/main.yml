@@ -42,14 +42,14 @@ jobs:
     name: Build
     needs: test
     runs-on: ubuntu-latest
-      - name: Build
+      - name: Run build
         run: npm run build
 
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-      - name: Deploy
+      - name: Run Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
